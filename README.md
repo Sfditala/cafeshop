@@ -1,36 +1,98 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# CafeShop
 
-## Getting Started
+![CafeShop](./public/hero.png)  
 
-First, run the development server:
+**CafeShop** is a modern **landing page and web application for a café** built with **Next.js 16, React, and Tailwind CSS**.  
+The project aims to create a smooth and engaging user experience for displaying coffee menus, image galleries, café information, and individual product pages, all with subtle scroll-triggered animations.
 
+---
+
+## 🏆 Key Features
+
+- **Attractive Landing Page** with a stylish Hero Section.  
+- **Gallery Section** with fade-in animation on scroll.  
+- **About Section** introducing the café with entrance animations.  
+- **Menu Section**:  
+  - Cards for each product.  
+  - Staggered animation for cards on scroll.  
+- **Contact Section**: EmailJS-powered contact form.  
+- **Fully responsive** for all devices.  
+- **Scroll-triggered animations** for smooth interactions.
+
+---
+
+## 🛠 Tech Stack
+
+- [Next.js 16](https://nextjs.org/)  
+- [React](https://reactjs.org/)  
+- [Tailwind CSS](https://tailwindcss.com/)  
+- [EmailJS](https://www.emailjs.com/) for contact form functionality  
+- CSS Transitions & Transform for scroll animations  
+- JavaScript ES6+
+
+---
+
+## 🚀 Getting Started Locally
+
+1. **Clone the repository**
 ```bash
+git clone https://github.com/username/CafeShop.git
+cd CafeShop
+Install dependencies
+
+npm install
+# or
+yarn install
+Run the development server
+
 npm run dev
 # or
 yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+Open in your browser:
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+http://localhost:3000
+🗂 Project Structure
+/app
+  /components
+     /CardMenu.jsx
+    /header.jsx
+   /footer.jsx
+ /sections
+      AboutSection.jsx
+      HeroSection.jsx
+      GallerySection.jsx
+      MenuSection.jsx
+      ContactSection.jsx
+  /data
+    menu.js
+  /hooks
+    useInView.js
+  /menu
+      page.jsx   <-- Dynamic product page
+/pages
+/public
+  /images
+    hero.png
+    gallery1.jpg
+    menu1.jpg
+...
+🔧 Usage
+Edit menu.js to add or update products.
 
-You can start editing the page by modifying `app/page.js`. The page auto-updates as you edit the file.
+Replace images in /public/images as needed.
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+Scroll-triggered animations are handled via useInView hook.
 
-## Learn More
+🎨 Animations & Effects
+Sections fade and translate in on scroll.
 
-To learn more about Next.js, take a look at the following resources:
+Menu cards appear one by one (staggered effect).
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+Hover effects on buttons and cards for interactive feel.
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+💡 Notes
+Mobile-first design for excellent experience on all devices.
 
-## Deploy on Vercel
+Can be extended with a full cart system and dark mode.
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+Modular and reusable components for scalability.
