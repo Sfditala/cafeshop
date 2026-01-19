@@ -9,7 +9,7 @@ export default function HeroSection() {
   return (
     <section ref={ref} id="hero" className="relative w-full h-screen">
       <Image
-        src="/hero.png"
+        src="/Hero.png"
         alt="Cafe Hero"
         fill
         className="object-cover"
